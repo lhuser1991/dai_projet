@@ -1,0 +1,66 @@
+<div class="col-md-6 offset-md-3">
+
+    <h3>Ajouter un produit</h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group form-component">
+            <label for="nom">Nom : </label>
+            <input type="text" class="form-control" id="nom" name="nom" [(ngModel)] = "produit.titre">
+        </div>
+
+        <div class="form-group form-component">
+            <label for="prix">Prix : </label>
+            <input type="number" class="form-control" id="prix" name="prix" [(ngModel)] = "produit.prix">
+        </div>
+
+        <div class="form-group form-component">
+            <label for="lien_img">Lien vers l'image du produit : </label>
+            <input type="text" class="form-control" id="lien_img" name="lien_img" [(ngModel)] = "produit.lien_img">
+        </div>
+
+        <div class="form-group form-component">
+            <label for="stock">Stock initial : </label>
+            <input type="number" class="form-control" id="stock" name="stock" [(ngModel)] = "produit.stock">
+        </div>
+
+        <div class="form-group form-component">
+            <label for="actif">Activé le produit : </label>
+            <select name="actif" id="actif" class="form-control" [(ngModel)] = produit.actif>
+                <option [value]="true">Oui</option>
+                <option [value]="false">Non</option>
+            </select>
+        </div>
+
+        <div class="form-group form-component">
+            <label for="description">Description : </label>
+            <input type="text" class="form-control" id="description" name="description" [(ngModel)] = "produit.description">
+        </div>
+
+        <div class="form-group form-component">
+            <label for="auteur">Auteur : </label>
+            <input type="text" class="form-control" id="auteur" name="auteur" [(ngModel)] = "produit.auteur">
+        </div>
+
+        <div class="form-group form-component">
+            <label for="editeur">Editeur : </label>
+            <input type="text" class="form-control" id="editeur" name="editeur" [(ngModel)] = "produit.editeur">
+        </div>
+
+        <div class="form-group form-component">
+            <label for="nb_pge">Nombre de page : </label>
+            <input type="number" class="form-control" id="nb_pge" name="nb_pge" [(ngModel)] = "produit.nb_pge">
+        </div>
+
+        <div class="form-group form-component">
+            <label for="univers">Univers du produit : </label>
+            <select name="univers" id="univers" class="form-control" [(ngModel)] = produit.id_univers>
+                <option *ngFor="let univers of universes" [value]="univers.id">{{univers.nom_univers}}</option>
+            </select>
+        </div>
+    
+        <div class="form-component">
+            <button class="btn btn-success" type="submit">Ajouter</button>
+        </div>
+    </form>
+
+</div>

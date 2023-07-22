@@ -1,0 +1,40 @@
+.page-produits {
+    width: 90%;
+    margin: auto;
+}
+
+.page-produits h2, .page-produits .content .systeme-tri h3 {
+    text-align: center;
+}
+
+.page-produits .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-produits .content .systeme-tri{
+    width: 30%;
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 2px;
+    max-height: 20em;
+}
+
+.page-produits .content .display-produits{
+    width: 70%;
+    padding: 1em;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.card a .img-prod{
+    object-fit: fill;
+    height: 25em;
+}
+
+.card-body {
+    border-top: 1px solid black
+}

@@ -1,0 +1,29 @@
+.sectionA {
+    width: 90%;
+    margin: auto;
+}
+
+.sectionA h2 {
+    text-align: center;
+}
+
+.sectionA .bodyA {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sectionA .bodyA aside p{
+    display: flex;
+    align-items: center;    
+    text-align: justify;
+}
+
+.sectionA .bodyA figure, .sectionA .bodyA aside{
+    width: 50%;
+    padding: 1em;
+}
+
+.sectionA .bodyA figure img, .sectionA .bodyA aside p{
+    min-height: 20em;
+    width: 100%;
+}

@@ -1,0 +1,17 @@
+<section class="produitschoisie-page">
+
+    <figure>
+        <img src="{{produit.lien_img}}" alt="img-produit">
+    </figure>
+
+    <aside>
+        <p><b>Titre : </b>{{produit.titre}}</p>
+        <p><b>Prix : </b>{{produit.prix}} €</p>
+        <p><b>En stock : </b>{{produit.stock == 0 ? 'non' : 'oui'}}</p>
+        <p><b>Description : </b>{{produit.description}}</p>
+        <p><b>Auteur : </b>{{produit.auteur}}</p>
+        <p><b>Editeur : </b>{{produit.editeur}}</p>
+        <p><b>Nombre de page : </b>{{produit.nb_pge}} pages</p>
+    </aside>
+
+</section>

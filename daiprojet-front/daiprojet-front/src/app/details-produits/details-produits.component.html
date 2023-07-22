@@ -1,0 +1,40 @@
+<h3>Informations du produit</h3>
+<div>
+    <div>
+        <label><b>Titre : </b></label> {{produit.titre}}
+    </div>
+    <div>
+        <label><b>Prix : </b></label> {{produit.prix}} €
+    </div>
+    <div>
+        <label><b>Lien de l'image : </b></label> {{produit.lien_img}}
+    </div>
+    <div>
+        <label><b>Stock : </b></label> {{produit.stock}}
+    </div>
+    <div>
+        <label><b>Produit activé : </b></label> {{produit.actif ? 'oui' : 'non'}}
+    </div>
+    <div>
+        <label><b>Description : </b></label> {{produit.description}}
+    </div>
+    <div>
+        <label><b>Auteur : </b></label> {{produit.auteur}}
+    </div>
+    <div>
+        <label><b>Editeur : </b></label> {{produit.editeur}}
+    </div>
+    <div>
+        <label><b>Nombre de page : </b></label> {{produit.nb_pge}}
+    </div>
+    <div>
+        <label><b>Univers lié : </b></label> {{produit.univers.nom_univers}}
+    </div>
+    <div>
+        <label><b>Catégories associées : </b></label>
+        <ul>
+            <li *ngFor="let categorie of categories">{{categorie.nom_categorie}}</li>
+        </ul>
+    </div>
+
+</div>

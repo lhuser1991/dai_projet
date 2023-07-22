@@ -1,0 +1,24 @@
+<div class="col-md-6 offset-md-3">
+
+    <h3>Ajouter une categorie à un produit</h3>
+    <form (ngSubmit) = "onSubmit()">
+        
+        <div class="form-group form-component">
+            <label for="categorie">Categorie : </label>
+            <select name="categorie" id="categorie" class="form-control" [(ngModel)] = categoriser.id_categorie>
+                <option *ngFor="let categorie of categories" [value]="categorie.id">{{categorie.nom_categorie}}</option>
+            </select>
+        </div>
+        
+        <div class="form-component">
+            <button class="btn btn-success" type="submit">Ajouter</button>
+        </div>
+    </form>
+    <section>
+        <h4>Rappel des categories deja associé à ce produit : </h4>
+        <ul>
+            <li *ngFor="let categorieAssocier of categoriesAssocier">{{categorieAssocier.nom_categorie}}</li>
+        </ul>
+    </section>
+
+</div>

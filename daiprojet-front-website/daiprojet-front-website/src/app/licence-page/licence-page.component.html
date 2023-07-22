@@ -1,0 +1,23 @@
+<section class="page-produits">
+    <h2>Nos Produits de la licence {{univers.nom_univers}}</h2>
+    <div class="content">
+        <div class="display-produits">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col card-produits" *ngFor="let produit of produits">
+                    <div class="card h-100">
+                        <a (click)="goToProduitschoisiePage(produit.id)">
+                            <img src="{{produit.lien_img}}" class="card-img-top img-prod" alt="manga">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">{{produit.titre}}</h5>
+                            <p class="card-text">{{produit.description}}</p>
+                            <p class="card-text">{{produit.prix}} €</p>
+                            <a href="#" class="btn btn-success">Ajouter au panier</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

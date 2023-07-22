@@ -1,0 +1,24 @@
+.produitschoisie-page {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.produitschoisie-page figure, .produitschoisie-page aside {
+    padding: .5em;
+    width: 50%;
+    margin: auto;
+}
+
+.produitschoisie-page figure img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.produitschoisie-page aside {
+    display: flex;
+    flex-direction: column;
+}

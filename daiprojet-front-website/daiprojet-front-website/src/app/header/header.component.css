@@ -1,0 +1,55 @@
+header {
+    margin: auto;
+    width: 90%;
+}
+
+.barre-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.barre-nav-component-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barre-nav-component-1 form{
+    width: 20em;
+    text-align: center;
+}
+
+.barre-nav-component-1 form input{
+    width: 100%;
+}
+
+.barre-nav-component-1-figure {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barre-nav-component-1-figure a figure{
+    width: 6em;
+}
+
+.barre-nav-component-1-figure a figure figcaption{
+    width: 100%;
+    text-align: center;
+}
+
+.barre-nav-component-1-figure a figure svg{
+    width: 100%;
+    text-align: center;
+}
+
+.barre-nav-component-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barre-nav-component-2 a, .barre-nav-component-1-figure a, .barre-nav-component-1 a{
+    text-decoration: none;
+    color: black;
+}

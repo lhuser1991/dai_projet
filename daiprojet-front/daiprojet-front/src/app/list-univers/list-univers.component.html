@@ -1,0 +1,18 @@
+<h2>Liste des univers</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-center">Nom</th>
+            <th class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let univers of universes">
+            <td class="text-center">{{univers.nom_univers}}</td>
+            <td class="text-center">
+                <button (click) = "updateUnivers(univers.id)" class="btn btn-info button">Modifier</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

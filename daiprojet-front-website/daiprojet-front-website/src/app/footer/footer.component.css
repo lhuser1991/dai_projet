@@ -1,0 +1,35 @@
+footer {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+footer section {
+    margin: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer aside {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+footer aside .row {
+    width: 100%;
+}
+
+footer aside .row .col {
+    text-align: center;
+}
+
+footer aside .row .col .card{
+    background-color: rgb(234,234,234);
+}

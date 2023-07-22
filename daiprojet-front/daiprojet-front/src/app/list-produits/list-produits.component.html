@@ -1,0 +1,26 @@
+<h2>Liste des produits</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-center">Titre</th>
+            <th class="text-center">Prix(€)</th>
+            <th class="text-center">Stock</th>
+            <th class="text-center">Activé</th>
+            <th class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let produit of produits">
+            <td class="text-center">{{produit.titre}}</td>
+            <td class="text-center">{{produit.prix}}</td>
+            <td class="text-center">{{produit.stock}}</td>
+            <td class="text-center">{{produit.actif ? 'oui' : 'non'}}</td>
+            <td class="text-center">
+                <button (click) = "detailsProduits(produit.id)" class="btn btn-info button">Details</button>
+                <button (click) = "updateProduits(produit.id)" class="btn btn-info button">Modifier</button>
+                <button (click) = "associerCategorie(produit.id)" class="btn btn-info button">Ajouter une categorie</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

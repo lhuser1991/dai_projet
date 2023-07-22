@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="welcome" routerLinkActive="active">Manga4Ever</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="welcome" routerLinkActive="active">Accueil</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Listes
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="produits" routerLinkActive="active">Liste des produits</a></li>
+            <li><a class="dropdown-item" routerLink="univers" routerLinkActive="active">Liste des univers</a></li>
+            <li><a class="dropdown-item" routerLink="categories" routerLinkActive="active">Liste des categories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ajout
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="add-produits" routerLinkActive="active">Ajout d'un produit</a></li>
+            <li><a class="dropdown-item" routerLink="add-univers" routerLinkActive="active">Ajout d'un univers</a></li>
+            <li><a class="dropdown-item" routerLink="add-categories" routerLinkActive="active">Ajout d'une categorie</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<h1 class="text-center">{{title}}</h1>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <span>Manga4Ever - Gestionnaires des produits</span>
+  </div>
+</footer>

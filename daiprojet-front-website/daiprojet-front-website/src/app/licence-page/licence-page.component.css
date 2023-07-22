@@ -1,0 +1,23 @@
+.page-produits {
+    width: 90%;
+    margin: auto;
+}
+
+.page-produits h2 {
+    text-align: center;
+    margin: 1em;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+.card a .img-prod{
+    object-fit: fill;
+    height: 25em;
+}
+
+.card-body {
+    border-top: 1px solid black
+}
